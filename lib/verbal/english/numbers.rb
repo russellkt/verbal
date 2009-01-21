@@ -58,7 +58,7 @@ module Verbal
 
       def process_hundreds(value, current_exponent, value_exponent)
       raise 'value should be in range: 0.999' unless (0..999).include?(value)
-        if value > 100
+        if value >= 100
 
           hundreds_count = value / 100
           if value % 100 == 0
